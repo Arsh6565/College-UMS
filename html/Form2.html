@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script src="FORM.js"></script>
+    <script>
+        function calculate(){
+            var Name=document.getElementById("n").value;
+            var Address=document.getElementById("a").value;
+            var Gender=document.getElementById("g").value;
+            var Hobbies=document.getElementById("i").value;
+            document.getElementById("name").innerHTML="Name is: " + Name;
+            document.getElementById("Institute").innerHTML="Institute is: " + Address;
+            document.getElementById("gender").innerHTML="Gender is: " + Gender;
+            document.getElementById("hobbies").innerHTML="Hobbies is: " + Hobbies;
+        }
+    </script>
+</head>
+<body>
+    <form action="javascript:calculate()" method="get" class="backgraound">
+       <center> Name:<input type="name" id="n" placeholder="enter your neme"></center>
+        <br>
+       <center> Institute:<input type="Institute" id="a" placeholder="enter your Institute"></center>
+        <br>
+       <center> Gender:
+        <input type="radio" id="g" name="gender" placeholder="your gender">Male
+        <input type="radio" id="f" name="gender" placeholder="yourgender">Female</center>
+        <br>
+       <center> Hobbies:
+        <input type="checkbox" nwme="" id="h">Playing
+        <input type="checkbox" name="" id="i">Reading
+        <input type="checkbox" name="" id="j">Typing</center>
+        <br>
+       <center> <input type="submit"></center>
+
+    </form>
+    <h2 id="name"></h2>
+    <h2 id="Institute"></h2>
+    <h2 id="gender"></h2>
+    <h2 id="hobbies"></h2>
+    
+</body>
+</html>

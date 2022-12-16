@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="calc.css">
+    <script>
+    function onSubmitClick()
+    {
+     var number1= document.getElementById("id").value;
+     var number2= document.getElementById("sec").value;
+     var operator= document.getElementById("op").value;
+
+    var result=""
+     if (operator == '1') 
+     {
+        result = number1 + number2;
+    }
+    else if (operator == '2') {
+        result = number1 - number2;
+    }
+    else if (operator == '3') {
+        result = number1 * number2;
+    }
+    else if (operator=='4')  {
+        result = number1 / number2;
+    }
+    else{
+        result = "Invalid Operator"
+    }
+
+     document.getElementById("w1").innerHTML="your data of word1 is: " + number1;
+     document.getElementById("w2").innerHTML=" your data of word2 is: "+ number2;
+     document.getElementById("w3").innerHTML=" Operator: "+ operator;
+     document.getElementById("w4").innerHTML=" Result: "+ result;
+    }
+</script>
+</head>
+<body>
+    <h1>CALCULATOR- </h1>
+    <h2>"1 is +",  
+        "2 is -", 
+        "3 is *", 
+        "4 is /"</h2>
+     <h2>Any other number is Invalid</h2>
+    <form action="javascript:onSubmitClick()" method="get" class="background">
+        <label for="id">
+        Number 1: <input id="id" type="number"></label>
+        <br>
+        <br>
+        <label for="sec">
+        Number 2: <input id="sec" type="number"></label>
+        <br>
+        <br>
+        <label for="op">
+        Operator: <input id="op" type="number"  ></label>
+        <br>
+        <br>
+        <input type="submit">
+        </form>
+        <br>
+        <br>                                                                           
+        <h3 id='w1'></h3>
+        <h3 id="w2"></h3>
+        <h3 id="w3"></h3>
+        <h3 id="w4"></h3>
+</body>
+</html>

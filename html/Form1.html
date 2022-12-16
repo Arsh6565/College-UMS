@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script>
+        function onSummiClick()
+        {
+            var word1= document.getElementById("id").value;
+            var word2= document.getElementById("sec").value;
+
+            var passwordDisplay=""
+
+            if(word2.length<=5)
+        {
+            passwordDisplay=word1.substring(0,2)+"***"
+
+        }
+        else
+        {
+            passwordDisplay=word2.substring(0,3)+"*******"
+        }
+        document.getElementById("w1").innerHTML="User Name is:" + word1;
+        document.getElementById("w2").innerHTML="Password is:"+ passwordDisplay;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

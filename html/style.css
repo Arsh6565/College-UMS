@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+th,td {
+    border: lpx solid black;
+    padding: 10px;
+}
+
+#data {
+    margin-bottom: 10px;
+}
+
+#data input, button{
+    padding: 10px;
+    width: 90px;
+}
